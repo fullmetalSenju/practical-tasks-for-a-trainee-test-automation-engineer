@@ -22,7 +22,6 @@ public class ScannerUsageExample {
         long taxId;
         float bodyWeightInKilograms;
         double yearIncomeInDollars;
-        char firstLetterOfName;
         String firstName;
 
         try {
@@ -47,9 +46,7 @@ public class ScannerUsageExample {
 
             System.out.println("What is your year income? (0.0 - 9000000.00)");
             yearIncomeInDollars = scanner.nextDouble();
-
-            System.out.print("What is the first letter of your first name? Type only one letter: ");
-            firstLetterOfName = scanner.next().charAt(0);
+            
 
             System.out.print("What is your first name? Type a string: ");
             firstName = scanner.next();
@@ -64,7 +61,6 @@ public class ScannerUsageExample {
             System.out.println("Tax ID: " + taxId);
             System.out.println("Body weight: " + bodyWeightInKilograms);
             System.out.println("Year income: " + yearIncomeInDollars + "$");
-            System.out.println("The first letter of the name: " + firstLetterOfName);
             System.out.println("The first name: " + firstName);
         } catch (InputMismatchException ex) {
             System.out.println("You have entered an incorrect value! Try to use one that limited in each output message.");
