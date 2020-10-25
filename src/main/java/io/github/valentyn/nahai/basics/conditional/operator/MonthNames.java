@@ -9,15 +9,33 @@ import java.time.Month;
  * Do not forget about handling an incorrect number!
  */
 public class MonthNames {
-    /*static String monthName(int numberOfMonth) {
+    static String monthName(int numberOfMonth) {
         if (numberOfMonth == 1) {
             return Month.of(1).name();
         } else if (numberOfMonth == 2) {
             return Month.of(2).name();
         } else if(numberOfMonth == 3) {
-            //...
-        }
-        //...
+            return Month.of(3).name();
+        }else if(numberOfMonth == 4){
+            return Month.of(4).name();
+        }else if(numberOfMonth == 5){
+            return Month.of(5).name();
+        }else if(numberOfMonth == 6){
+            return Month.of(6).name();
+        }else if (numberOfMonth == 7){
+            return Month.of(7).name();
+        }else if(numberOfMonth == 8){
+            return Month.of(8).name();
+        }else if (numberOfMonth == 9){
+            return Month.of(9).name();
+        }else if(numberOfMonth == 10){
+            return Month.of(10).name();
+        }else if(numberOfMonth == 11){
+            return  Month.of(11).name();
+        }else if(numberOfMonth == 12){
+            return Month.of(12).name();
+        }else {return "There is no such number of the months";
+        }       //...
     }
 
     public static void main(String[] args) {
@@ -36,5 +54,5 @@ public class MonthNames {
         System.out.println("The month number is 13: " + monthName(13));
         System.out.println("The month number is -1: " + monthName(-1));
         System.out.println("The month number is 1234234: " + monthName(1234234));
-    }*/
+    }
 }

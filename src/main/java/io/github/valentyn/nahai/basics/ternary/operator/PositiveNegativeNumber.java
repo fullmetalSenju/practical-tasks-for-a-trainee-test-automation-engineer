@@ -11,7 +11,9 @@ public class PositiveNegativeNumber {
     public static void main(String[] args) {
         Random random = new Random(System.currentTimeMillis());
         int randomNumber = random.nextInt(Integer.MAX_VALUE) * (random.nextBoolean() ? -1 : 1);
-        
-        // your code here
+
+        System.out.println(randomNumber);
+        String number = randomNumber < 0 ? "is negative"  : "is positive";
+        System.out.println("The number " + number);
     }
 }

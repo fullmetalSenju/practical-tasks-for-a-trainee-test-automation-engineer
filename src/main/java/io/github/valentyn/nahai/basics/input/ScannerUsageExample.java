@@ -36,7 +36,7 @@ public class ScannerUsageExample {
             System.out.println("What is your body height in centimeters (30 - 250): ");
             bodyHeightInCentimeters = scanner.nextShort();
 
-            System.out.println("What is your insurance ID? (0 - " + Integer.MAX_VALUE + "): ");
+            System.out.println("What is your  ID? (0 - " + Integer.MAX_VALUE + "): ");
             insuranceId = scanner.nextInt();
 
             System.out.println("What is your tax ID? (0 - " + Long.MAX_VALUE + "): ");

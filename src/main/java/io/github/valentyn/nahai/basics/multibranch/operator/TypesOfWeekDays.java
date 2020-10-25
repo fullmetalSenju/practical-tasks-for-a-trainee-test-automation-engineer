@@ -1,5 +1,7 @@
 package io.github.valentyn.nahai.basics.multibranch.operator;
 
+import java.util.Scanner;
+
 /**
  * Task:
  * Create a program that output the type of a week day according to its number.
@@ -11,6 +13,14 @@ package io.github.valentyn.nahai.basics.multibranch.operator;
  */
 public class TypesOfWeekDays {
     public static void main(String[] args) {
-        // your code here
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Write the number of the day");
+        int dayOfTheWeek = scanner.nextInt();
+        
+        switch (dayOfTheWeek){
+            case 1, 2, 3, 4 , 5 -> System.out.println("Workday");
+            case 6, 7 -> System.out.println("Weekend");
+            default -> System.out.println("Incorrect value, try again");
+        }
     }
 }

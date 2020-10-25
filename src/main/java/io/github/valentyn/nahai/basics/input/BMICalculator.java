@@ -1,5 +1,7 @@
 package io.github.valentyn.nahai.basics.input;
 
+import java.util.Scanner;
+
 /*
  * Into:
  * Body mass index (BMI) is a value derived from the mass (weight) and height of a person. 
@@ -17,6 +19,12 @@ package io.github.valentyn.nahai.basics.input;
  */
 public class BMICalculator {
     public static void main(String[] args) {
-        // your code here
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter your height in m: ");
+        double height = scanner.nextDouble();
+        System.out.println("Enter your wight in kg :");
+        int weight = scanner.nextInt();
+        System.out.println("Your BMI is " + weight / (height * height));
+        
     }
 }
