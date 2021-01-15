@@ -1,33 +1,11 @@
 package interfaces;
 
-public class Vehicle implements VehicleInterface{
-    public boolean isEngineOn = false;
-    public boolean isBrake = false;
-    public boolean isBeep = false;
-    
-    @Override
-    public void stopEngine() {
-        isEngineOn = false;
-    }
+public interface Vehicle {
+    void startEngine();
+    void brake();
+    void beep();
 
-    @Override
-    public void startEngine() { 
-        isEngineOn = true;
-    }
-
-    @Override
-    public void brake() {
-        isBrake = !isBrake;
-
-    }
-
-    @Override
-    public void beep() {
-        isBeep = !isBeep;
-
-    }
-
-    @Override
-    public void repairEngine() {
+    default void repairEngine() {
+        System.out.println("Call needed specialists to repair the engine.");
     }
 }

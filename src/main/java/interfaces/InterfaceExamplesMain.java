@@ -14,15 +14,4 @@ package interfaces;
  * Не забывайте присваивать вновь создаваемые объекты cсылке базового типа и работать только с ними.
  */
 public class InterfaceExamplesMain {
-    public static void main(String[]args){
-        
-        Car car = new Car();
-        car.startEngine();
-        
-        System.out.println();
-        
-        Plane plane = new Plane();
-        plane.repairEngine();
-        
-    }
- }
+}
